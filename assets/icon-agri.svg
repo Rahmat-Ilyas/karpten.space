@@ -1,0 +1,17 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+    <!-- Geometric Leaf -->
+    <path d="M40 70 Q10 70 10 40 Q10 10 40 10 Q70 10 70 40 Q70 70 40 70 Z" fill="none" stroke="#94a3b8" stroke-width="2" />
+    
+    <!-- Central Vein / Data Line -->
+    <line x1="40" y1="70" x2="40" y2="10" stroke="#d62828" stroke-width="2" />
+    
+    <!-- Ribs -->
+    <line x1="40" y1="55" x2="20" y2="45" stroke="#94a3b8" stroke-width="1.5" />
+    <line x1="40" y1="55" x2="60" y2="45" stroke="#94a3b8" stroke-width="1.5" />
+    <line x1="40" y1="35" x2="20" y2="25" stroke="#94a3b8" stroke-width="1.5" />
+    <line x1="40" y1="35" x2="60" y2="25" stroke="#94a3b8" stroke-width="1.5" />
+    
+    <!-- Tech Dot Accents -->
+    <circle cx="20" cy="45" r="2" fill="#d62828" />
+    <circle cx="60" cy="25" r="2" fill="#d62828" />
+</svg>

@@ -1,0 +1,66 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <!-- Deep Blue Background Gradient -->
+        <linearGradient id="bg-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#020617"/> <!-- Very dark blue -->
+            <stop offset="100%" stop-color="#0f172a"/> <!-- Slate 900 -->
+        </linearGradient>
+
+        <!-- Red Glow Accent -->
+        <radialGradient id="red-glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#d62828" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#d62828" stop-opacity="0"/>
+        </radialGradient>
+        
+        <!-- Grid Pattern -->
+        <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+        </pattern>
+        
+        <!-- Circuit/Organic Lines -->
+        <filter id="glow-effect">
+            <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+    
+    <!-- Grid Overlay -->
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    
+    <!-- Organic/Tech Shapes -->
+    <!-- Large Circle Outline (System) -->
+    <circle cx="1500" cy="540" r="400" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="2"/>
+    <circle cx="1500" cy="540" r="300" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="40"/>
+    
+    <!-- Abstract Leaf/Circuit Nodes -->
+    <g stroke="#d62828" stroke-width="2" stroke-opacity="0.3" filter="url(#glow-effect)">
+        <!-- Node 1 -->
+        <line x1="200" y1="1080" x2="400" y2="800" />
+        <circle cx="400" cy="800" r="4" fill="#d62828"/>
+        <line x1="400" y1="800" x2="350" y2="700" />
+        
+        <!-- Node 2 -->
+        <line x1="1720" y1="0" x2="1500" y2="300" />
+        <circle cx="1500" cy="300" r="4" fill="#d62828"/>
+    </g>
+
+    <!-- Ambient Glows -->
+    <circle cx="1500" cy="540" r="600" fill="url(#red-glow)"/>
+    <circle cx="200" cy="900" r="500" fill="url(#red-glow)" opacity="0.6"/>
+
+    <!-- Subtle Tech Data Textures -->
+    <g fill="rgba(255,255,255,0.05)">
+        <rect x="100" y="100" width="4" height="4"/>
+        <rect x="100" y="110" width="4" height="4"/>
+        <rect x="100" y="120" width="4" height="4"/>
+        
+        <rect x="1800" y="900" width="4" height="4"/>
+        <rect x="1800" y="910" width="4" height="4"/>
+    </g>
+</svg>
